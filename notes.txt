@@ -1,0 +1,41 @@
+Laravel File structure and Routing
+    When a webpage is refreshed the command used by it is used GET meaning its the basic Routing
+
+    Larvel uses the MVC model 
+
+    
+    #File Structuring
+        a.) app 
+            - http
+                -controller: this is where the web pages where the http is located 
+                -model: this is where everything about the database is located
+        b.) routes
+            -api: for middlewares
+            -channels: for websockets
+            -consoles: this is where we can put in our own artisan commands aside from the built in ones
+            -web: this is the one that accepts http, it can also utilize middleware here 
+        c.) bootstrap
+            -this folder combines the core codes or classes into one not the css bootstrap
+        d.) config
+            -this is where the app name is located, and other important things like cacheing it could be changed to cookies instead of file
+            -also the database can be changed here if needed like mysql, sqlite 
+        e.) .env File
+            -this also can be used to edit instead of the config
+        f.) database
+            -here is where we can find the migration
+            -php artisan migrate
+            -is a good feature it can be used for plug and play
+                -seeders: can automatically populate the database
+                -factories: has relation with seeders its used together
+        g.) public
+            -this is the exposed page as the name suggests its public
+        h.) resources
+            - this is where the css, js, is placed but its rarely used as public is usually the one edited
+        i.) views
+            - when route runs it returns a view. 
+        j.) storage
+            -storage
+
+    #Routing
+        -we need to know to structure routes properly to prevent problems
+        - this is wher we dictate how the user access the pages so it is very importatn
