@@ -9,8 +9,9 @@
     @if(request()->routeIs('tasks.index'))
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     @endif
+    <script src="https://unpkg.com/@heroicons/v2/24/outline/esm/index.js"></script>
 </head>
-<body class="bg-background text-surface min-h-screen font-montserrat">
+<body class="bg-gradient-to-br from-background to-background/95 text-surface min-h-screen font-montserrat">
     <div class="container mx-auto px-4 py-8">
         @yield('content')
     </div>
