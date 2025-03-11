@@ -11,8 +11,16 @@ export default {
     ],
     theme: {
         extend: {
+            colors: {
+                background: '#0A0A0A',
+                surface: '#FAFAFF',
+                success: '#22c55e',
+                warning: '#eab308',
+                danger: '#ef4444'
+            },
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+                montserrat: ['Montserrat', 'sans-serif'],
             },
         },
     },
